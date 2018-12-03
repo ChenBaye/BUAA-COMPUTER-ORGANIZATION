@@ -1,0 +1,61 @@
+	lw $1, 8188($0)
+	li $2, -1394634794
+	addu $2, $1, $2
+	li $3, -89559018
+	li $4, -1201237425
+	mtlo $2
+	mthi $3
+	la $7, skip0
+	jalr $25, $7
+	madd $2, $25
+skip0:	mflo $7
+	sw $7, 0($0)
+	la $9, skip1
+	jalr $16, $9
+	nop
+skip1:	madd $2, $16
+	mflo $9
+	sw $9, 4($0)
+	la $25, skip2
+	jalr $12, $25
+	nop
+skip2:	nop
+	madd $2, $12
+	mflo $25
+	sw $25, 8($0)
+	jal skip3
+	madd $2, $31
+skip3:	mflo $26
+	sw $26, 12($0)
+	la $16, skip4
+	jalr $21, $16
+	nop
+skip4:	madd $2, $21
+	mflo $16
+	sw $16, 16($0)
+	la $16, skip5
+	jalr $12, $16
+	nop
+skip5:	nop
+	madd $2, $12
+	mflo $16
+	sw $16, 20($0)
+	la $28, skip6
+	jalr $19, $28
+	madd $2, $19
+skip6:	mflo $28
+	sw $28, 24($0)
+	la $30, skip7
+	jalr $8, $30
+	nop
+skip7:	madd $2, $8
+	mflo $30
+	sw $30, 28($0)
+	jal skip8
+	nop
+skip8:	nop
+	madd $2, $31
+	mflo $10
+	sw $10, 32($0)
+dl:	j dl
+	nop

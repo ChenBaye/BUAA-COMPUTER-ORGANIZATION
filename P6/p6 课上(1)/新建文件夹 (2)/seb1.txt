@@ -1,0 +1,215 @@
+	lw $1, 8188($0)
+	li $2, -1266777382
+	addu $2, $1, $2
+	li $3, 763143049
+	li $4, -190069996
+	multu $2, $3
+	ori $1, $0, 0xffff
+	li $29, 0
+	and $29, $29, $1
+	seb $27, $2
+	beq $27, $29, skip0
+	nop
+	addiu $27, $27, 9693
+skip0:	sw $27, 0($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $24, $24, $1
+	seb $18, $2
+	nop
+	bne $18, $24, skip1
+	nop
+	addiu $18, $18, 7701
+skip1:	sw $18, 4($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $17, $17, $1
+	seb $15, $2
+	nop
+	nop
+	bne $15, $17, skip2
+	nop
+	addiu $15, $15, 15595
+skip2:	sw $15, 8($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $30, $30, $1
+	seb $9, $2
+	bne $9, $30, skip3
+	nop
+	addiu $9, $9, 16495
+skip3:	sw $9, 12($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $27, $27, $1
+	seb $8, $2
+	nop
+	beq $8, $27, skip4
+	nop
+	addiu $8, $8, 3657
+skip4:	sw $8, 16($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $18, $18, $1
+	seb $23, $2
+	nop
+	nop
+	beq $23, $18, skip5
+	nop
+	addiu $23, $23, 18091
+skip5:	sw $23, 20($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $24, $24, $1
+	seb $19, $2
+	bne $19, $24, skip6
+	nop
+	addiu $19, $19, 900
+skip6:	sw $19, 24($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $17, $17, $1
+	seb $21, $2
+	nop
+	beq $21, $17, skip7
+	nop
+	addiu $21, $21, 6135
+skip7:	sw $21, 28($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	ori $1, $0, 0xffff
+	and $7, $7, $1
+	seb $21, $2
+	nop
+	nop
+	beq $21, $7, skip8
+	nop
+	addiu $21, $21, 25611
+skip8:	sw $21, 32($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $13, $2
+	bgez $13, skip9
+	nop
+	addiu $13, $13, 20320
+skip9:	sw $13, 36($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $7, $2
+	nop
+	bltz $7, skip10
+	nop
+	addiu $7, $7, 4260
+skip10:	sw $7, 40($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $13, $2
+	nop
+	nop
+	bgtz $13, skip11
+	nop
+	addiu $13, $13, 6644
+skip11:	sw $13, 44($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $13, $2
+	blez $13, skip12
+	nop
+	addiu $13, $13, 18354
+skip12:	sw $13, 48($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $22, $2
+	nop
+	bgez $22, skip13
+	nop
+	addiu $22, $22, 7488
+skip13:	sw $22, 52($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $10, $2
+	nop
+	nop
+	bltz $10, skip14
+	nop
+	addiu $10, $10, 15528
+skip14:	sw $10, 56($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $15, $2
+	bgtz $15, skip15
+	nop
+	addiu $15, $15, 6257
+skip15:	sw $15, 60($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $10, $2
+	nop
+	blez $10, skip16
+	nop
+	addiu $10, $10, 6448
+skip16:	sw $10, 64($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $13, $2
+	nop
+	nop
+	bgez $13, skip17
+	nop
+	addiu $13, $13, 31898
+skip17:	sw $13, 68($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $11, $2
+	bltz $11, skip18
+	nop
+	addiu $11, $11, 8732
+skip18:	sw $11, 72($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $28, $2
+	nop
+	bgtz $28, skip19
+	nop
+	addiu $28, $28, 22859
+skip19:	sw $28, 76($0)
+	mflo $2
+	addu $2, $2, $4
+	multu $2, $3
+	seb $18, $2
+	nop
+	nop
+	blez $18, skip20
+	nop
+	addiu $18, $18, 10400
+skip20:	sw $18, 80($0)
+	mflo $2
+	addu $2, $2, $4
+dl:	j dl
+	nop

@@ -1,0 +1,753 @@
+	li $2, -1414928149
+	li $3, -1955943135
+	li $4, -2076967099
+	li $5, 1856193775
+	li $6, 320641985
+	jal skip0
+	srav $18, $31, $0
+skip0:	ji $18, 28
+	nop
+	nop
+	j end0
+	sw $2, 0($0)
+	j end0
+	sw $3, 0($0)
+	j end0
+	sw $4, 0($0)
+	j end0
+	sw $5, 0($0)
+	j end0
+	sw $6, 0($0)
+end0:
+	li $1, 772774591
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip1
+	srav $29, $31, $0
+skip1:	ori $ra, $0, 0
+	ji $29, 52
+	nop
+	nop
+	nop
+	nop
+	nop
+	j end1
+	sw $2, 4($0)
+	j end1
+	sw $3, 4($0)
+	j end1
+	sw $4, 4($0)
+	j end1
+	sw $5, 4($0)
+	j end1
+	sw $6, 4($0)
+end1:
+	li $1, 2010007359
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip2
+	or $19, $31, $0
+skip2:	ori $ra, $0, 0
+	nop
+	ji $19, 36
+	nop
+	nop
+	j end2
+	sw $2, 8($0)
+	j end2
+	sw $3, 8($0)
+	j end2
+	sw $4, 8($0)
+	j end2
+	sw $5, 8($0)
+	j end2
+	sw $6, 8($0)
+end2:
+	li $1, 406920145
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip3
+	sllv $27, $31, $0
+skip3:	ji $27, 16
+	nop
+	nop
+	nop
+	j end3
+	sw $2, 12($0)
+	j end3
+	sw $3, 12($0)
+	j end3
+	sw $4, 12($0)
+	j end3
+	sw $5, 12($0)
+	j end3
+	sw $6, 12($0)
+end3:
+	li $1, -601095443
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip4
+	or $18, $31, $0
+skip4:	ori $ra, $0, 0
+	ji $18, 44
+	nop
+	nop
+	nop
+	nop
+	nop
+	j end4
+	sw $2, 16($0)
+	j end4
+	sw $3, 16($0)
+	j end4
+	sw $4, 16($0)
+	j end4
+	sw $5, 16($0)
+	j end4
+	sw $6, 16($0)
+end4:
+	li $1, 335188283
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip5
+	or $21, $31, $0
+skip5:	ori $ra, $0, 0
+	nop
+	ji $21, 44
+	nop
+	nop
+	j end5
+	sw $2, 20($0)
+	j end5
+	sw $3, 20($0)
+	j end5
+	sw $4, 20($0)
+	j end5
+	sw $5, 20($0)
+	j end5
+	sw $6, 20($0)
+end5:
+	li $1, 1367910150
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip6
+	srav $16, $31, $0
+skip6:	ji $16, 56
+	nop
+	nop
+	nop
+	nop
+	nop
+	j end6
+	sw $2, 24($0)
+	j end6
+	sw $3, 24($0)
+	j end6
+	sw $4, 24($0)
+	j end6
+	sw $5, 24($0)
+	j end6
+	sw $6, 24($0)
+end6:
+	li $1, -422979399
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip7
+	or $9, $31, $0
+skip7:	ori $ra, $0, 0
+	ji $9, 36
+	nop
+	j end7
+	sw $2, 28($0)
+	j end7
+	sw $3, 28($0)
+	j end7
+	sw $4, 28($0)
+	j end7
+	sw $5, 28($0)
+	j end7
+	sw $6, 28($0)
+end7:
+	li $1, 1157915782
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip8
+	xor $9, $31, $0
+skip8:	ori $ra, $0, 0
+	nop
+	ji $9, 28
+	nop
+	nop
+	j end8
+	sw $2, 32($0)
+	j end8
+	sw $3, 32($0)
+	j end8
+	sw $4, 32($0)
+	j end8
+	sw $5, 32($0)
+	j end8
+	sw $6, 32($0)
+end8:
+	li $1, 384125135
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip9
+	ori $28, $31, 0
+skip9:	ji $28, 52
+	nop
+	nop
+	nop
+	nop
+	j end9
+	sw $2, 36($0)
+	j end9
+	sw $3, 36($0)
+	j end9
+	sw $4, 36($0)
+	j end9
+	sw $5, 36($0)
+	j end9
+	sw $6, 36($0)
+end9:
+	li $1, -43922004
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip10
+	xori $15, $31, 0
+skip10:	ori $ra, $0, 0
+	ji $15, 36
+	nop
+	nop
+	nop
+	nop
+	nop
+	j end10
+	sw $2, 40($0)
+	j end10
+	sw $3, 40($0)
+	j end10
+	sw $4, 40($0)
+	j end10
+	sw $5, 40($0)
+	j end10
+	sw $6, 40($0)
+end10:
+	li $1, 1536884698
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip11
+	srl $23, $31, 0
+skip11:	ori $ra, $0, 0
+	nop
+	ji $23, 28
+	nop
+	nop
+	nop
+	nop
+	j end11
+	sw $2, 44($0)
+	j end11
+	sw $3, 44($0)
+	j end11
+	sw $4, 44($0)
+	j end11
+	sw $5, 44($0)
+	j end11
+	sw $6, 44($0)
+end11:
+	li $1, 1421728555
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip12
+	xori $24, $31, 0
+skip12:	ji $24, 20
+	nop
+	nop
+	j end12
+	sw $2, 48($0)
+	j end12
+	sw $3, 48($0)
+	j end12
+	sw $4, 48($0)
+	j end12
+	sw $5, 48($0)
+	j end12
+	sw $6, 48($0)
+end12:
+	li $1, 1386137999
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip13
+	ori $25, $31, 0
+skip13:	ori $ra, $0, 0
+	ji $25, 28
+	nop
+	j end13
+	sw $2, 52($0)
+	j end13
+	sw $3, 52($0)
+	j end13
+	sw $4, 52($0)
+	j end13
+	sw $5, 52($0)
+	j end13
+	sw $6, 52($0)
+end13:
+	li $1, -691479990
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip14
+	sll $15, $31, 0
+skip14:	ori $ra, $0, 0
+	nop
+	ji $15, 48
+	nop
+	nop
+	nop
+	j end14
+	sw $2, 56($0)
+	j end14
+	sw $3, 56($0)
+	j end14
+	sw $4, 56($0)
+	j end14
+	sw $5, 56($0)
+	j end14
+	sw $6, 56($0)
+end14:
+	li $1, -1650415847
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip15
+	sra $7, $31, 0
+skip15:	ji $7, 20
+	nop
+	nop
+	nop
+	nop
+	j end15
+	sw $2, 60($0)
+	j end15
+	sw $3, 60($0)
+	j end15
+	sw $4, 60($0)
+	j end15
+	sw $5, 60($0)
+	j end15
+	sw $6, 60($0)
+end15:
+	li $1, -918683228
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip16
+	xori $28, $31, 0
+skip16:	ori $ra, $0, 0
+	ji $28, 40
+	nop
+	nop
+	nop
+	nop
+	j end16
+	sw $2, 64($0)
+	j end16
+	sw $3, 64($0)
+	j end16
+	sw $4, 64($0)
+	j end16
+	sw $5, 64($0)
+	j end16
+	sw $6, 64($0)
+end16:
+	li $1, 989849684
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip17
+	ori $30, $31, 0
+skip17:	ori $ra, $0, 0
+	nop
+	ji $30, 44
+	nop
+	nop
+	nop
+	nop
+	j end17
+	sw $2, 68($0)
+	j end17
+	sw $3, 68($0)
+	j end17
+	sw $4, 68($0)
+	j end17
+	sw $5, 68($0)
+	j end17
+	sw $6, 68($0)
+end17:
+	li $1, -2005823150
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip18
+	mtlo $ra
+skip18:	ori $ra, $0, 0
+	mflo $7
+	ji $7, 40
+	nop
+	nop
+	nop
+	nop
+	nop
+	j end18
+	sw $2, 72($0)
+	j end18
+	sw $3, 72($0)
+	j end18
+	sw $4, 72($0)
+	j end18
+	sw $5, 72($0)
+	j end18
+	sw $6, 72($0)
+end18:
+	li $1, 2053643475
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip19
+	mtlo $ra
+skip19:	ori $ra, $0, 0
+	mflo $25
+	nop
+	ji $25, 32
+	nop
+	nop
+	j end19
+	sw $2, 76($0)
+	j end19
+	sw $3, 76($0)
+	j end19
+	sw $4, 76($0)
+	j end19
+	sw $5, 76($0)
+	j end19
+	sw $6, 76($0)
+end19:
+	li $1, 393278794
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip20
+	mthi $ra
+skip20:	ori $ra, $0, 0
+	mfhi $10
+	nop
+	nop
+	ji $10, 32
+	nop
+	j end20
+	sw $2, 80($0)
+	j end20
+	sw $3, 80($0)
+	j end20
+	sw $4, 80($0)
+	j end20
+	sw $5, 80($0)
+	j end20
+	sw $6, 80($0)
+end20:
+	li $1, -965274700
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip21
+	sw $ra, 84($0)
+skip21:	ori $ra, $0, 0
+	lw $27, 84($0)
+	ji $27, 48
+	nop
+	j end21
+	sw $2, 88($0)
+	j end21
+	sw $3, 88($0)
+	j end21
+	sw $4, 88($0)
+	j end21
+	sw $5, 88($0)
+	j end21
+	sw $6, 88($0)
+end21:
+	li $1, -1320018799
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip22
+	sw $ra, 92($0)
+skip22:	ori $ra, $0, 0
+	lw $21, 92($0)
+	nop
+	ji $21, 44
+	nop
+	nop
+	nop
+	j end22
+	sw $2, 96($0)
+	j end22
+	sw $3, 96($0)
+	j end22
+	sw $4, 96($0)
+	j end22
+	sw $5, 96($0)
+	j end22
+	sw $6, 96($0)
+end22:
+	li $1, -213242620
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip23
+	sw $ra, 100($0)
+skip23:	ori $ra, $0, 0
+	lw $18, 100($0)
+	nop
+	nop
+	ji $18, 60
+	nop
+	nop
+	nop
+	nop
+	j end23
+	sw $2, 104($0)
+	j end23
+	sw $3, 104($0)
+	j end23
+	sw $4, 104($0)
+	j end23
+	sw $5, 104($0)
+	j end23
+	sw $6, 104($0)
+end23:
+	li $1, 51708929
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip24
+	sw $ra, 108($0)
+skip24:	ori $ra, $0, 0
+	lw $12, 108($0)
+	ji $12, 52
+	nop
+	nop
+	j end24
+	sw $2, 112($0)
+	j end24
+	sw $3, 112($0)
+	j end24
+	sw $4, 112($0)
+	j end24
+	sw $5, 112($0)
+	j end24
+	sw $6, 112($0)
+end24:
+	li $1, 779716088
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip25
+	sw $ra, 116($0)
+skip25:	ori $ra, $0, 0
+	lw $24, 116($0)
+	nop
+	ji $24, 40
+	nop
+	nop
+	j end25
+	sw $2, 120($0)
+	j end25
+	sw $3, 120($0)
+	j end25
+	sw $4, 120($0)
+	j end25
+	sw $5, 120($0)
+	j end25
+	sw $6, 120($0)
+end25:
+	li $1, -262144672
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip26
+	sw $ra, 124($0)
+skip26:	ori $ra, $0, 0
+	lw $7, 124($0)
+	nop
+	nop
+	ji $7, 64
+	nop
+	nop
+	nop
+	j end26
+	sw $2, 128($0)
+	j end26
+	sw $3, 128($0)
+	j end26
+	sw $4, 128($0)
+	j end26
+	sw $5, 128($0)
+	j end26
+	sw $6, 128($0)
+end26:
+	li $1, -2012205366
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip27
+	sw $ra, 132($0)
+skip27:	ori $ra, $0, 0
+	lw $14, 132($0)
+	ji $14, 48
+	nop
+	nop
+	nop
+	j end27
+	sw $2, 136($0)
+	j end27
+	sw $3, 136($0)
+	j end27
+	sw $4, 136($0)
+	j end27
+	sw $5, 136($0)
+	j end27
+	sw $6, 136($0)
+end27:
+	li $1, -689350158
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip28
+	sw $ra, 140($0)
+skip28:	ori $ra, $0, 0
+	lw $24, 140($0)
+	nop
+	ji $24, 68
+	nop
+	nop
+	nop
+	nop
+	nop
+	j end28
+	sw $2, 144($0)
+	j end28
+	sw $3, 144($0)
+	j end28
+	sw $4, 144($0)
+	j end28
+	sw $5, 144($0)
+	j end28
+	sw $6, 144($0)
+end28:
+	li $1, -2030468223
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+	jal skip29
+	sw $ra, 148($0)
+skip29:	ori $ra, $0, 0
+	lw $15, 148($0)
+	nop
+	nop
+	ji $15, 48
+	nop
+	nop
+	nop
+	j end29
+	sw $2, 152($0)
+	j end29
+	sw $3, 152($0)
+	j end29
+	sw $4, 152($0)
+	j end29
+	sw $5, 152($0)
+	j end29
+	sw $6, 152($0)
+end29:
+	li $1, 220587752
+	xor $2, $2, $3
+	xor $3, $3, $4
+	xor $4, $4, $5
+	xor $5, $5, $6
+	xor $6, $6, $1
+dl:	j dl
+	nop

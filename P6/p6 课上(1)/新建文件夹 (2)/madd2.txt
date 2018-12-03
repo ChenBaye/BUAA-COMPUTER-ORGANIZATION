@@ -1,0 +1,1008 @@
+#initial
+addi $s0 $0 131071
+addi $s1 $0 5
+addi $s2 $0 65535
+addi $s3 $0 8
+lui $s5 0xABCD
+add $s6 $t0 0xffff
+#initial done
+and $t0 $s0 $s1
+or $t1 $s0 $t0
+srav $t2 $s0 $t0
+sltu $t3 $s0 $t0
+sw $t3 0($0)
+sw $t2 4($0)
+sw $t1 8($0)
+srav $t0 $s0 $s1
+srlv $t1 $t0 $s0
+srav $t2 $t0 $s0
+nor $t3 $t0 $s0
+sw $t1 12($0)
+sw $t3 16($0)
+sw $t2 20($0)
+and $t0 $s0 $s1
+andi $t1 $t0 98
+addiu $t2 $t0 35
+xori $t3 $t0 13
+sw $t3 24($0)
+sw $t2 28($0)
+sw $t1 32($0)
+addi $t0 $s1 100
+xor $t0 $0 $0
+lb $t1 0($t0)
+lb $t2 4($t0)
+lhu $t3 8($t0)
+sw $t3 36($0)
+sb $t2 40($0)
+sb $t1 44($0)
+addi $t0 $s1 100
+sltiu $t0 $0 0
+lw $t1 0($t0)
+lhu $t2 4($t0)
+lb $t3 8($t0)
+sb $t3 48($0)
+sh $t2 52($0)
+sh $t1 56($0)
+andi $t0 $s1 105
+sllv $t1 $s0 $t0
+srav $t2 $s0 $t0
+srav $t3 $s0 $t0
+sw $t3 60($0)
+sw $t2 64($0)
+sw $t1 68($0)
+andi $t0 $s1 557
+xor $t1 $t0 $s0
+addu $t2 $t0 $s0
+subu $t3 $t0 $s0
+sw $t1 72($0)
+sw $t3 76($0)
+sw $t2 80($0)
+addiu $t0 $s1 3
+ori $t1 $t0 8
+xori $t2 $t0 9
+andi $t3 $t0 0
+sw $t2 84($0)
+sw $t1 88($0)
+sw $t3 92($0)
+lbu $t0 80($0)
+nor $t1 $s0 $t0
+and $t2 $s0 $t0
+and $t3 $s0 $t0
+sw $t3 96($0)
+sw $t2 100($0)
+sw $t1 104($0)
+lbu $t0 96($0)
+subu $t1 $t0 $s0
+addu $t2 $t0 $s0
+addu $t3 $t0 $s0
+sw $t1 108($0)
+sw $t3 112($0)
+sw $t2 116($0)
+lw $t0 88($0)
+slti $t1 $t0 100
+addiu $t2 $t0 100
+sltiu $t3 $t0 100
+sw $t3 120($0)
+sw $t2 124($0)
+sw $t1 128($0)
+addi $t0 $0 4
+sw $t0 132($0)
+lbu $t0 132($0)
+lbu $t1 0($t0)
+lh $t2 4($t0)
+lw $t3 8($t0)
+sw $t3 132($0)
+sw $t2 136($0)
+sh $t1 140($0)
+subu $t0 $s0 $s1
+sll $t1 $t0 2
+sra $t2 $t0 2
+srl $t3 $t0 1
+sw $t3 144($0)
+sw $t2 148($0)
+sw $t1 152($0)
+sltiu $t0 $s1 2
+sra $t1 $s1 3
+sll $t2 $s1 2
+srl $t3 $s1 3
+sw $t2 156($0)
+sw $t1 160($0)
+sw $t3 164($0)
+lbu $t0 0($0)
+sll $t1 $t0 3
+sra $t2 $t0 1
+srl $t3 $t0 1
+sw $t3 168($0)
+sw $t2 172($0)
+sw $t1 176($0)
+sra $t0 $s0 3
+xor $t1 $s0 $t0
+subu $t2 $s0 $t0
+srav $t3 $s0 $t0
+sw $t3 180($0)
+sw $t2 184($0)
+sw $t1 188($0)
+sra $t0 $s0 4
+and $t1 $t0 $s0
+subu $t2 $t0 $s0
+xor $t3 $t0 $s0
+sw $t1 192($0)
+sw $t3 196($0)
+sw $t2 200($0)
+srl $t0 $s0 3
+slti $t1 $t0 3
+addiu $t2 $t0 6
+ori $t3 $t0 2
+sw $t2 204($0)
+sw $t1 208($0)
+sw $t3 212($0)
+addi $t0 $0 4
+addi $t1 $0 256
+sll $t2 $t0 2
+lbu $t3 0($t2)
+lb $t4 4($t2)
+lbu $t5 8($t2)
+sw $t3 216($0)
+sw $t4 220($0)
+sw $t5 224($0)
+sra $t2 $t1 6
+lw $t3 0($t2)
+lw $t4 4($t2)
+lb $t5 8($t2)
+sw $t3 228($0)
+sw $t4 232($0)
+sw $t5 236($0)
+sllv $t0 $s0 $s1
+sltu $t1 $s2 $s3
+div $t1 $t0
+subu $t2 $s0 $s1
+slt $t3 $s2 $s3
+and $t4 $s0 $s1
+mflo $t5
+srlv $t1 $t5 $s3
+srav $t6 $t5 $s1
+ori $t0 $t5 -100
+mult $t1 $t0
+sw $t3 240($0)
+sw $t4 244($0)
+sw $t2 248($0)
+sw $t6 252($0)
+mfhi $t5
+ori $t7 $t5 4
+xori $t8 $t5 4
+srav $t9 $t5 $s1
+ori $t0 $s2 4
+xori $t1 $s2 4
+andi $t2 $s2 4
+mult $t0 $t1
+sw $t7 256($0)
+sw $t8 260($0)
+sw $t9 264($0)
+mfhi $t5
+sw $t5 268($0)
+sw $t5 272($0)
+sw $t5 276($0)
+lui $t0 0xffff
+add $t0 $t0 $s6
+sw $t0 280($0)
+lw $t0 280($0)
+lb $t1 280($0)
+multu $t1 $t0
+xor $t2 $s0 $s1
+or $t3 $s2 $s3
+and $t4 $s0 $s1
+mflo $t5
+lh $t0 280($0)
+sll $t6 $t5 3
+sra $t1 $t5 4
+divu $t1 $t0
+sw $t3 280($0)
+sw $t4 284($0)
+sw $t2 288($0)
+sw $t6 292($0)
+mflo $t5
+srl $t7 $t5 4
+sltiu $t8 $t5 7
+srlv $t9 $t5 $s1
+srl $t1 $s0 2
+sll $t0 $s0 3
+slti $t2 $s2 4
+div $t0 $t1
+sw $t7 296($0)
+sw $t8 300($0)
+sw $t9 304($0)
+mflo $t5
+sw $t5 308($0)
+sw $t5 312($0)
+sw $t5 316($0)
+subu $t0 $s0 $s1
+nop
+nop
+mthi $t0
+mfhi $t1
+or $t0 $s0 $s1
+nop
+mtlo $t0
+mflo $t2
+srlv $t0 $s0 $s1
+mthi $t0
+mfhi $t3
+sw $t1 320($0)
+sw $t2 324($0)
+sw $t3 328($0)
+sltiu $t0 $s1 762
+nop
+nop
+mthi $t0
+mfhi $t1
+slti $t0 $s1 343
+nop
+mtlo $t0
+mflo $t2
+addiu $t0 $s1 114
+mthi $t0
+mfhi $t3
+sw $t1 332($0)
+sw $t2 336($0)
+sw $t3 340($0)
+sll $t0 $s0 0
+nop
+nop
+mthi $t0
+mfhi $t1
+srl $t0 $s0 3
+nop
+mtlo $t0
+mflo $t2
+srl $t0 $s0 4
+mthi $t0
+mfhi $t3
+sw $t1 344($0)
+sw $t2 348($0)
+sw $t3 352($0)
+lw $t0 0($0)
+nop
+nop
+mthi $t0
+mfhi $t1
+lb $t0 0($0)
+nop
+mtlo $t0
+mflo $t2
+lbu $t0 0($0)
+mthi $t0
+mfhi $t3
+sw $t1 356($0)
+sw $t2 360($0)
+sw $t3 364($0)
+addi $t0 $0 4
+mthi $t0
+mfhi $t5
+nop
+nop
+lh $t1 0($t5)
+addi $t0 $0 0
+mthi $t0
+mfhi $t5
+nop
+lhu $t2 0($t5)
+addi $t0 $0 8
+mthi $t0
+mfhi $t5
+lw $t3 0($t5)
+sw $t1 368($0)
+sw $t2 372($0)
+sw $t3 376($0)
+sllv $t0 $s0 $s1
+srav $t1 $s0 $t0
+nor $t2 $s0 $t0
+sllv $t3 $s0 $t0
+sw $t3 380($0)
+sw $t2 384($0)
+sw $t1 388($0)
+sltu $t0 $s0 $s1
+sllv $t1 $t0 $s0
+xor $t2 $t0 $s0
+slt $t3 $t0 $s0
+sw $t1 392($0)
+sw $t3 396($0)
+sw $t2 400($0)
+and $t0 $s0 $s1
+xori $t1 $t0 81
+ori $t2 $t0 11
+sltiu $t3 $t0 88
+sw $t3 404($0)
+sw $t2 408($0)
+sw $t1 412($0)
+addi $t0 $s1 100
+xor $t0 $0 $0
+lh $t1 0($t0)
+lbu $t2 4($t0)
+lw $t3 8($t0)
+sb $t3 416($0)
+sw $t2 420($0)
+sb $t1 424($0)
+addi $t0 $s1 100
+andi $t0 $0 0
+lhu $t1 0($t0)
+lh $t2 4($t0)
+lh $t3 8($t0)
+sb $t3 428($0)
+sb $t2 432($0)
+sw $t1 436($0)
+ori $t0 $s1 637
+xor $t1 $s0 $t0
+slt $t2 $s0 $t0
+sltu $t3 $s0 $t0
+sw $t3 440($0)
+sw $t2 444($0)
+sw $t1 448($0)
+ori $t0 $s1 366
+addu $t1 $t0 $s0
+sltu $t2 $t0 $s0
+srlv $t3 $t0 $s0
+sw $t1 452($0)
+sw $t3 456($0)
+sw $t2 460($0)
+xori $t0 $s1 3
+addiu $t1 $t0 5
+sltiu $t2 $t0 8
+andi $t3 $t0 4
+sw $t2 464($0)
+sw $t1 468($0)
+sw $t3 472($0)
+lw $t0 168($0)
+nor $t1 $s0 $t0
+srav $t2 $s0 $t0
+sllv $t3 $s0 $t0
+sw $t3 476($0)
+sw $t2 480($0)
+sw $t1 484($0)
+lw $t0 480($0)
+subu $t1 $t0 $s0
+subu $t2 $t0 $s0
+sltu $t3 $t0 $s0
+sw $t1 488($0)
+sw $t3 492($0)
+sw $t2 496($0)
+lb $t0 348($0)
+slti $t1 $t0 100
+sltiu $t2 $t0 100
+xori $t3 $t0 100
+sw $t3 500($0)
+sw $t2 504($0)
+sw $t1 508($0)
+addi $t0 $0 4
+sw $t0 512($0)
+lb $t0 512($0)
+lbu $t1 0($t0)
+lw $t2 4($t0)
+lbu $t3 8($t0)
+sh $t3 512($0)
+sh $t2 516($0)
+sb $t1 520($0)
+and $t0 $s0 $s1
+srl $t1 $t0 3
+sra $t2 $t0 0
+sra $t3 $t0 0
+sw $t3 524($0)
+sw $t2 528($0)
+sw $t1 532($0)
+addiu $t0 $s1 9
+sra $t1 $s1 0
+sra $t2 $s1 0
+sra $t3 $s1 0
+sw $t2 536($0)
+sw $t1 540($0)
+sw $t3 544($0)
+lb $t0 0($0)
+sra $t1 $t0 3
+sll $t2 $t0 0
+srl $t3 $t0 2
+sw $t3 548($0)
+sw $t2 552($0)
+sw $t1 556($0)
+sll $t0 $s0 4
+nor $t1 $s0 $t0
+subu $t2 $s0 $t0
+srlv $t3 $s0 $t0
+sw $t3 560($0)
+sw $t2 564($0)
+sw $t1 568($0)
+sll $t0 $s0 2
+srav $t1 $t0 $s0
+nor $t2 $t0 $s0
+addu $t3 $t0 $s0
+sw $t1 572($0)
+sw $t3 576($0)
+sw $t2 580($0)
+sra $t0 $s0 2
+ori $t1 $t0 4
+slti $t2 $t0 9
+ori $t3 $t0 6
+sw $t2 584($0)
+sw $t1 588($0)
+sw $t3 592($0)
+addi $t0 $0 4
+addi $t1 $0 256
+sll $t2 $t0 2
+lhu $t3 0($t2)
+lhu $t4 4($t2)
+lbu $t5 8($t2)
+sw $t3 596($0)
+sw $t4 600($0)
+sw $t5 604($0)
+sra $t2 $t1 6
+lw $t3 0($t2)
+lbu $t4 4($t2)
+lw $t5 8($t2)
+sw $t3 608($0)
+sw $t4 612($0)
+sw $t5 616($0)
+srlv $t0 $s0 $s1
+sllv $t1 $s2 $s3
+divu $t1 $t0
+nor $t2 $s0 $s1
+srlv $t3 $s2 $s3
+subu $t4 $s0 $s1
+mflo $t5
+addu $t1 $t5 $s3
+sltu $t6 $t5 $s1
+ori $t0 $t5 -100
+div $t1 $t0
+sw $t3 620($0)
+sw $t4 624($0)
+sw $t2 628($0)
+sw $t6 632($0)
+mflo $t5
+xori $t7 $t5 4
+xori $t8 $t5 4
+subu $t9 $t5 $s1
+andi $t0 $s2 4
+andi $t1 $s2 4
+andi $t2 $s2 4
+multu $t0 $t1
+sw $t7 636($0)
+sw $t8 640($0)
+sw $t9 644($0)
+mfhi $t5
+sw $t5 648($0)
+sw $t5 652($0)
+sw $t5 656($0)
+lui $t0 0xffff
+add $t0 $t0 $s6
+sw $t0 660($0)
+lw $t0 660($0)
+lw $t1 660($0)
+divu $t1 $t0
+srlv $t2 $s0 $s1
+srav $t3 $s2 $s3
+and $t4 $s0 $s1
+mflo $t5
+lw $t0 660($0)
+sra $t6 $t5 3
+sra $t1 $t5 4
+divu $t1 $t0
+sw $t3 660($0)
+sw $t4 664($0)
+sw $t2 668($0)
+sw $t6 672($0)
+mfhi $t5
+srl $t7 $t5 4
+slti $t8 $t5 7
+and $t9 $t5 $s1
+sll $t1 $s0 2
+sra $t0 $s0 3
+ori $t2 $s2 4
+div $t0 $t1
+sw $t7 676($0)
+sw $t8 680($0)
+sw $t9 684($0)
+mflo $t5
+sw $t5 688($0)
+sw $t5 692($0)
+sw $t5 696($0)
+sltu $t0 $s0 $s1
+nop
+nop
+mthi $t0
+mfhi $t1
+sllv $t0 $s0 $s1
+nop
+mtlo $t0
+mflo $t2
+xor $t0 $s0 $s1
+mthi $t0
+mfhi $t3
+sw $t1 700($0)
+sw $t2 704($0)
+sw $t3 708($0)
+xori $t0 $s1 530
+nop
+nop
+mthi $t0
+mfhi $t1
+ori $t0 $s1 780
+nop
+mtlo $t0
+mflo $t2
+sltiu $t0 $s1 359
+mthi $t0
+mfhi $t3
+sw $t1 712($0)
+sw $t2 716($0)
+sw $t3 720($0)
+sra $t0 $s0 2
+nop
+nop
+mthi $t0
+mfhi $t1
+sll $t0 $s0 2
+nop
+mtlo $t0
+mflo $t2
+sll $t0 $s0 1
+mthi $t0
+mfhi $t3
+sw $t1 724($0)
+sw $t2 728($0)
+sw $t3 732($0)
+lb $t0 0($0)
+nop
+nop
+mthi $t0
+mfhi $t1
+lhu $t0 0($0)
+nop
+mtlo $t0
+mflo $t2
+lbu $t0 0($0)
+mthi $t0
+mfhi $t3
+sw $t1 736($0)
+sw $t2 740($0)
+sw $t3 744($0)
+addi $t0 $0 4
+mthi $t0
+mfhi $t5
+nop
+nop
+lbu $t1 0($t5)
+addi $t0 $0 0
+mthi $t0
+mfhi $t5
+nop
+lh $t2 0($t5)
+addi $t0 $0 8
+mthi $t0
+mfhi $t5
+lbu $t3 0($t5)
+sw $t1 748($0)
+sw $t2 752($0)
+sw $t3 756($0)
+#madd
+sllv $t0 $s0 $s1
+addu $t1 $s2 $s3
+madd $t1 $t0
+sllv $t2 $s0 $s1
+and $t3 $s2 $s3
+srlv $t4 $s0 $s1
+mfhi $t5
+srlv $t1 $t5 $s3
+srav $t6 $t5 $s1
+ori $t0 $t5 -100
+madd $t1 $t0
+sw $t3 1140($0)
+sw $t4 1144($0)
+sw $t2 1148($0)
+sw $t6 1152($0)
+mflo $t5
+andi $t7 $t5 4
+xori $t8 $t5 4
+and $t9 $t5 $s1
+addiu $t0 $s2 4
+andi $t1 $s2 4
+ori $t2 $s2 4
+madd $t0 $t1
+sw $t7 1156($0)
+sw $t8 1160($0)
+sw $t9 1164($0)
+mflo $t5
+sw $t5 1168($0)
+sw $t5 1172($0)
+sw $t5 1176($0)
+lui $t0 0xffff
+add $t0 $t0 $s6
+sw $t0 1180($0)
+lw $t0 1180($0)
+lw $t1 1180($0)
+madd $t1 $t0
+srav $t2 $s0 $s1
+slt $t3 $s2 $s3
+addu $t4 $s0 $s1
+mfhi $t5
+lbu $t0 1180($0)
+sll $t6 $t5 3
+srl $t1 $t5 4
+madd $t1 $t0
+sw $t3 1180($0)
+sw $t4 1184($0)
+sw $t2 1188($0)
+sw $t6 1192($0)
+mfhi $t5
+srl $t7 $t5 4
+addiu $t8 $t5 7
+nor $t9 $t5 $s1
+sll $t1 $s0 2
+sll $t0 $s0 3
+slti $t2 $s2 4
+madd $t0 $t1
+sw $t7 1196($0)
+sw $t8 1200($0)
+sw $t9 1204($0)
+mflo $t5
+sw $t5 1208($0)
+sw $t5 1212($0)
+sw $t5 1216($0)
+subu $t0 $s0 $s1
+nop
+nop
+mthi $t0
+mfhi $t1
+nor $t0 $s0 $s1
+nop
+mtlo $t0
+mflo $t2
+sllv $t0 $s0 $s1
+mthi $t0
+mfhi $t3
+sw $t1 1220($0)
+sw $t2 1224($0)
+sw $t3 1228($0)
+addiu $t0 $s1 442
+nop
+nop
+mthi $t0
+mfhi $t1
+xori $t0 $s1 783
+nop
+mtlo $t0
+mflo $t2
+slti $t0 $s1 896
+mthi $t0
+mfhi $t3
+sw $t1 1232($0)
+sw $t2 1236($0)
+sw $t3 1240($0)
+sra $t0 $s0 4
+nop
+nop
+mthi $t0
+mfhi $t1
+sra $t0 $s0 3
+nop
+mtlo $t0
+mflo $t2
+sll $t0 $s0 3
+mthi $t0
+mfhi $t3
+sw $t1 1244($0)
+sw $t2 1248($0)
+sw $t3 1252($0)
+lhu $t0 0($0)
+nop
+nop
+mthi $t0
+mfhi $t1
+lhu $t0 0($0)
+nop
+mtlo $t0
+mflo $t2
+lh $t0 0($0)
+mthi $t0
+mfhi $t3
+sw $t1 1256($0)
+sw $t2 1260($0)
+sw $t3 1264($0)
+addi $t0 $0 4
+mthi $t0
+mfhi $t5
+nop
+nop
+lh $t1 0($t5)
+addi $t0 $0 0
+mthi $t0
+mfhi $t5
+nop
+lb $t2 0($t5)
+addi $t0 $0 8
+mthi $t0
+mfhi $t5
+lh $t3 0($t5)
+sw $t1 1268($0)
+sw $t2 1272($0)
+sw $t3 1276($0)
+sllv $t0 $s0 $s1
+slt $t1 $s2 $s3
+madd $t1 $t0
+and $t2 $s0 $s1
+slt $t3 $s2 $s3
+srlv $t4 $s0 $s1
+mfhi $t5
+srav $t1 $t5 $s3
+sllv $t6 $t5 $s1
+xori $t0 $t5 -100
+madd $t1 $t0
+sw $t3 1280($0)
+sw $t4 1284($0)
+sw $t2 1288($0)
+sw $t6 1292($0)
+mflo $t5
+andi $t7 $t5 4
+xori $t8 $t5 4
+srlv $t9 $t5 $s1
+xori $t0 $s2 4
+xori $t1 $s2 4
+addiu $t2 $s2 4
+madd $t0 $t1
+sw $t7 1296($0)
+sw $t8 1300($0)
+sw $t9 1304($0)
+mflo $t5
+sw $t5 1308($0)
+sw $t5 1312($0)
+sw $t5 1316($0)
+lui $t0 0xffff
+add $t0 $t0 $s6
+sw $t0 1320($0)
+lh $t0 1320($0)
+lh $t1 1320($0)
+madd $t1 $t0
+sltu $t2 $s0 $s1
+subu $t3 $s2 $s3
+slt $t4 $s0 $s1
+mflo $t5
+lh $t0 1320($0)
+sll $t6 $t5 3
+sra $t1 $t5 4
+madd $t1 $t0
+sw $t3 1320($0)
+sw $t4 1324($0)
+sw $t2 1328($0)
+sw $t6 1332($0)
+mfhi $t5
+srl $t7 $t5 4
+slti $t8 $t5 7
+addu $t9 $t5 $s1
+srl $t1 $s0 2
+sll $t0 $s0 3
+slti $t2 $s2 4
+madd $t0 $t1
+sw $t7 1336($0)
+sw $t8 1340($0)
+sw $t9 1344($0)
+mfhi $t5
+sw $t5 1348($0)
+sw $t5 1352($0)
+sw $t5 1356($0)
+sltu $t0 $s0 $s1
+nop
+nop
+mthi $t0
+mfhi $t1
+srlv $t0 $s0 $s1
+nop
+mtlo $t0
+mflo $t2
+and $t0 $s0 $s1
+mthi $t0
+mfhi $t3
+sw $t1 1360($0)
+sw $t2 1364($0)
+sw $t3 1368($0)
+sltiu $t0 $s1 718
+nop
+nop
+mthi $t0
+mfhi $t1
+sltiu $t0 $s1 848
+nop
+mtlo $t0
+mflo $t2
+sltiu $t0 $s1 636
+mthi $t0
+mfhi $t3
+sw $t1 1372($0)
+sw $t2 1376($0)
+sw $t3 1380($0)
+sll $t0 $s0 4
+nop
+nop
+mthi $t0
+mfhi $t1
+srl $t0 $s0 1
+nop
+mtlo $t0
+mflo $t2
+sll $t0 $s0 0
+mthi $t0
+mfhi $t3
+sw $t1 1384($0)
+sw $t2 1388($0)
+sw $t3 1392($0)
+lh $t0 0($0)
+nop
+nop
+mthi $t0
+mfhi $t1
+lh $t0 0($0)
+nop
+mtlo $t0
+mflo $t2
+lbu $t0 0($0)
+mthi $t0
+mfhi $t3
+sw $t1 1396($0)
+sw $t2 1400($0)
+sw $t3 1404($0)
+addi $t0 $0 4
+mthi $t0
+mfhi $t5
+nop
+nop
+lbu $t1 0($t5)
+addi $t0 $0 0
+mthi $t0
+mfhi $t5
+nop
+lw $t2 0($t5)
+addi $t0 $0 8
+mthi $t0
+mfhi $t5
+lb $t3 0($t5)
+sw $t1 1408($0)
+sw $t2 1412($0)
+sw $t3 1416($0)
+xor $t0 $s0 $s1
+subu $t1 $s2 $s3
+madd $t1 $t0
+slt $t2 $s0 $s1
+sllv $t3 $s2 $s3
+sltu $t4 $s0 $s1
+mfhi $t5
+sllv $t1 $t5 $s3
+nor $t6 $t5 $s1
+addiu $t0 $t5 -100
+madd $t1 $t0
+sw $t3 1420($0)
+sw $t4 1424($0)
+sw $t2 1428($0)
+sw $t6 1432($0)
+mfhi $t5
+andi $t7 $t5 4
+andi $t8 $t5 4
+or $t9 $t5 $s1
+andi $t0 $s2 4
+addiu $t1 $s2 4
+xori $t2 $s2 4
+madd $t0 $t1
+sw $t7 1436($0)
+sw $t8 1440($0)
+sw $t9 1444($0)
+mfhi $t5
+sw $t5 1448($0)
+sw $t5 1452($0)
+sw $t5 1456($0)
+lui $t0 0xffff
+add $t0 $t0 $s6
+sw $t0 1460($0)
+lb $t0 1460($0)
+lb $t1 1460($0)
+madd $t1 $t0
+sltu $t2 $s0 $s1
+nor $t3 $s2 $s3
+srav $t4 $s0 $s1
+mflo $t5
+lhu $t0 1460($0)
+sra $t6 $t5 3
+srl $t1 $t5 4
+madd $t1 $t0
+sw $t3 1460($0)
+sw $t4 1464($0)
+sw $t2 1468($0)
+sw $t6 1472($0)
+mflo $t5
+sll $t7 $t5 4
+sltiu $t8 $t5 7
+slt $t9 $t5 $s1
+srl $t1 $s0 2
+sll $t0 $s0 3
+sltiu $t2 $s2 4
+madd $t0 $t1
+sw $t7 1476($0)
+sw $t8 1480($0)
+sw $t9 1484($0)
+mflo $t5
+sw $t5 1488($0)
+sw $t5 1492($0)
+sw $t5 1496($0)
+srlv $t0 $s0 $s1
+nop
+nop
+mthi $t0
+mfhi $t1
+or $t0 $s0 $s1
+nop
+mtlo $t0
+mflo $t2
+srav $t0 $s0 $s1
+mthi $t0
+mfhi $t3
+sw $t1 1500($0)
+sw $t2 1504($0)
+sw $t3 1508($0)
+ori $t0 $s1 27
+nop
+nop
+mthi $t0
+mfhi $t1
+addiu $t0 $s1 937
+nop
+mtlo $t0
+mflo $t2
+addiu $t0 $s1 874
+mthi $t0
+mfhi $t3
+sw $t1 1512($0)
+sw $t2 1516($0)
+sw $t3 1520($0)
+srl $t0 $s0 1
+nop
+nop
+mthi $t0
+mfhi $t1
+srl $t0 $s0 0
+nop
+mtlo $t0
+mflo $t2
+sra $t0 $s0 0
+mthi $t0
+mfhi $t3
+sw $t1 1524($0)
+sw $t2 1528($0)
+sw $t3 1532($0)
+lbu $t0 0($0)
+nop
+nop
+mthi $t0
+mfhi $t1
+lw $t0 0($0)
+nop
+mtlo $t0
+mflo $t2
+lw $t0 0($0)
+mthi $t0
+mfhi $t3
+sw $t1 1536($0)
+sw $t2 1540($0)
+sw $t3 1544($0)
+addi $t0 $0 4
+mthi $t0
+mfhi $t5
+nop
+nop
+lbu $t1 0($t5)
+addi $t0 $0 0
+mthi $t0
+mfhi $t5
+nop
+lw $t2 0($t5)
+addi $t0 $0 8
+mthi $t0
+mfhi $t5
+lb $t3 0($t5)
+sw $t1 1548($0)
+sw $t2 1552($0)
+sw $t3 1556($0)
+end: j end
+nop
