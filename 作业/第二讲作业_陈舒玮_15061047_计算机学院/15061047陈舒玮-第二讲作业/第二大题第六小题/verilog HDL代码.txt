@@ -1,0 +1,11 @@
+module adder4(
+    input  a0,
+    input  a1,
+	 input  b0,
+	 input  b1,
+    output Carry,
+    output s0,
+	 output s1
+    );
+	assign{Carry,s1,s0}={a1,a0}+{s1,s0};
+endmodule

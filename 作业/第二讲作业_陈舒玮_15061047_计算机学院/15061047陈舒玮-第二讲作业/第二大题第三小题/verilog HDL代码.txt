@@ -1,0 +1,9 @@
+module VOTE(
+    input A,
+    input B,
+    input C,
+    output OUT
+    );
+assign OUT=(A&&B)||(A&&C)||(B&&C);
+
+endmodule
